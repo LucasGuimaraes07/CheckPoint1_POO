@@ -9,7 +9,7 @@ public class Servico {
 
     public String servicos(String modelo){
 
-        modelo = id + " " + categoria + ": " + descricao;
+        modelo = id + " " + categoria + " : " + descricao;
 
         return modelo;
     }
