@@ -1,4 +1,4 @@
-public class Profissional {
+public class Profissional extends Servico {
 
     private int id;
     private String nomeProfissional;
@@ -6,17 +6,12 @@ public class Profissional {
     private int cpfProfissional;
     private int telefoneProfissional;
     private double horaTrabalho;
+//    protected Servico profissao;
 
-    protected Servico categoria;
-
-    protected Servico descricao;
-
-
-    public Profissional(int id, String nomeProfissional, String sobrenomeProfissional, int cpfProfissional, int telefoneProfissional, double horaTrabalho) {
-        this.id = id;
+    public Profissional(String categoria, String nomeProfissional, String sobrenomeProfissional, int telefoneProfissional, double horaTrabalho) {
+        super(categoria);
         this.nomeProfissional = nomeProfissional;
         this.sobrenomeProfissional = sobrenomeProfissional;
-        this.cpfProfissional = cpfProfissional;
         this.telefoneProfissional = telefoneProfissional;
         this.horaTrabalho = horaTrabalho;
     }
@@ -69,13 +64,20 @@ public class Profissional {
         this.horaTrabalho = horaTrabalho;
     }
 
-    public String[] imprimirProfissional(String[] trabalhador){
-        trabalhador = new String[]{String.valueOf(id), nomeProfissional, nomeProfissional, String.valueOf(cpfProfissional), String.valueOf(telefoneProfissional), String.valueOf(horaTrabalho), String.valueOf(categoria)};
+
+
+
+
+    public String imprimirProfissional(String trabalhador){
+        trabalhador = " Os dados do Profissional: "+ " \n" +
+                nomeProfissional+ " " + sobrenomeProfissional +" \n"+
+                "CPF: " + cpfProfissional + " \n"+
+                "Telefone: " + telefoneProfissional + " \n"+
+                "Valor da hora de trabalho: " +"R$"+ horaTrabalho +"0" +" reais" +" \n" +
+                "Funcao: " + categoria;
 
         return trabalhador;
     }
-
-
 
     public double valorTrabalho(int qtdHoras){
         return qtdHoras * horaTrabalho;

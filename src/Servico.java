@@ -1,6 +1,6 @@
 public class Servico {
     protected int id;
-    protected String categoria;
+    protected  String categoria;
     protected String descricao;
 
     public Servico(String categoria) {
@@ -12,8 +12,8 @@ public class Servico {
         modelo = id + " " + categoria + ": " + descricao;
 
         return modelo;
-
     }
+
 
 
 }
