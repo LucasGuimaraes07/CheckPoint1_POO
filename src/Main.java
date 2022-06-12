@@ -57,21 +57,18 @@ public class Main {
 
         fProfissional.setId(1);
         fProfissional.setCpfProfissional(999888555);
-//        fProfissional.profissao.categoria = fJob.categoria;
         System.out.println(fProfissional.imprimirProfissional(String.valueOf(fProfissional)));
         System.out.println(" \n");
         Profissional sProfissional = new Profissional(sJob.categoria, "Sergio","Martins",989798944,12.5);
 
         sProfissional.setId(2);
         sProfissional.setCpfProfissional(887888555);
-//        sProfissional.profissao.categoria = sJob.categoria;
         System.out.println(sProfissional.imprimirProfissional(String.valueOf(sProfissional)));
         System.out.println(" \n");
         Profissional tProfissional = new Profissional(tJob.categoria, "Fabio","Junior",999756565,16.5);
 
         tProfissional.setId(3);
         tProfissional.setCpfProfissional(976888555);
-//        tProfissional.profissao.categoria = tJob.categoria;
         System.out.println(tProfissional.imprimirProfissional(String.valueOf(tProfissional)));
         System.out.println(" \n");
         System.out.println("//// CONTRATOS ////");

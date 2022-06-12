@@ -6,7 +6,6 @@ public class Profissional extends Servico {
     private int cpfProfissional;
     private int telefoneProfissional;
     private double horaTrabalho;
-//    protected Servico profissao;
 
     public Profissional(String categoria, String nomeProfissional, String sobrenomeProfissional, int telefoneProfissional, double horaTrabalho) {
         super(categoria);
@@ -63,10 +62,6 @@ public class Profissional extends Servico {
     public void setHoraTrabalho(double horaTrabalho) {
         this.horaTrabalho = horaTrabalho;
     }
-
-
-
-
 
     public String imprimirProfissional(String trabalhador){
         trabalhador = " Os dados do Profissional: "+ " \n" +
